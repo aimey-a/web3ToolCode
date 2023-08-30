@@ -2,19 +2,18 @@ import axios from 'axios-https-proxy-fix'
 import { Message } from 'element-ui'
 import {duneurl} from '@/utils/dune';
 
-const header = {
-    proxy: {
-      host: '127.0.0.1',
-      port: 7890
-    },
-  }
+// const header = {
+//     proxy: {
+//       host: '127.0.0.1',
+//       port: 7890
+//     },
+//   }
 const timeout = 15000
 
 
 
 const service = axios.create({
   timeout,
-  header,
 })
 
 //请求拦截器
