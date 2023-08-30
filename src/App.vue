@@ -1,8 +1,12 @@
 <template>
   <div id="app">
     <div id="app_center">
-      <nva></nva>
-      <router-view />
+      <div>
+        <nva></nva>
+      </div>
+      <div id="center_txt">
+        <router-view />
+      </div>
     </div>
   </div>
 </template>
@@ -31,7 +35,12 @@ hmtl {
   margin: 0;
   padding: 0;
 }
-#app_center{
-    display: flex;
+#app_center {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+}
+#center_txt{
+    width: 1100px;
 }
 </style>
