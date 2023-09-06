@@ -14,6 +14,11 @@ const routes = [
     name: 'esh',
     component: () => import('@/views/esh.vue'),
   },
+  {
+    path: '/eth',
+    name: 'eth',
+    component: () => import('@/views/eth.vue'),
+  },
 ]
 
 const router = new VueRouter({

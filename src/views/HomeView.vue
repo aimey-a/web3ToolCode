@@ -7,7 +7,7 @@
             <a class="a_text">eths最低价</a>
             <el-button type="primary" size="small" @click="ethsPrice()">查询</el-button>
           </div>
-          <p>最低：{{ eths.priceUsd  }}u</p>
+          <p>最低：{{ eths.priceUsd }}u</p>
           <p>单价：{{ eths.unitPriceUsd }}u</p>
           <p>最低：{{ eths.price }}e</p>
           <p>单价：{{ eths.unitPrice }}e</p>

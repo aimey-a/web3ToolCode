@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@uniswap/v3-sdk": "^3.10.0",
     "axios": "^1.4.0",
     "axios-https-proxy-fix": "^0.17.1",
     "babel-eslint": "^10.1.0",
