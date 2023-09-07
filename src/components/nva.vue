@@ -1,12 +1,12 @@
 <template>
   <div>
-    <el-menu :router="true" :default-active="$route.path">
+    <!-- <el-menu :router="true" :default-active="$route.path">
       <div v-for="(e,i) in router" :key="i">
         <el-menu-item :index="e.path">
           <span slot="title">{{e.name}}</span>
         </el-menu-item>
       </div>
-    </el-menu>
+    </el-menu> -->
   </div>
 </template>
 
@@ -22,8 +22,12 @@ export default {
   components: {},
   created() {
     this.router = this.$router.options.routes;
+    this.router.sort((i, j) => {
+      return i.meta.rank - j.meta.rank;
+    });
   },
   mounted() {
+    
   },
   methods: {},
 };
