@@ -36,17 +36,25 @@ const routes = [
       rank: 1,
     },
   },
+  {
+    path: '/',
+    name: 'tool',
+    component: () => import('@/views/tool.vue'),
+    meta: {
+      rank: 1,
+    },
+  },
 ]
 
 const router = new VueRouter({
   routes,
 })
 
-router.beforeEach((to, from, next) => {
-  if (to.path == '/') {
-    next({ name: 'uni' })
-  }
-  next()
-})
+// router.beforeEach((to, from, next) => {
+//   if (to.path == '/') {
+//     next({ name: 'uni' })
+//   }
+//   next()
+// })
 
 export default router
