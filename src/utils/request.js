@@ -13,9 +13,14 @@ const service = axios.create({
 
 service.interceptors.response.use(
    response => {
+    // console.log(response);
     const res = response.data
-    let data = res.data
-    return data
+    if (res.data != undefined) {
+        return res.data
+    }else{
+        return res
+    }
+  
   },
   error => {
     Message.error("请求错误")

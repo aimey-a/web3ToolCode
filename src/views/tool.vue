@@ -11,7 +11,7 @@ export default {
   name: "tool",
   data() {
     return {
-      text: "text_primary placeholder   exe",
+      text: "",
       uptext: "",
     };
   },

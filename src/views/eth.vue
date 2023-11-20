@@ -19,8 +19,8 @@ export default {
   components: {},
   created() {},
   mounted() {
-    // this.getGas()
-    this.getBu();
+    this.getGas()
+    // this.getBu();
   },
   methods: {
     getGas() {

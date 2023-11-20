@@ -6,3 +6,10 @@ export function GetEthsPrice(url) {
 export function GetEthsBill(url) {
     return request.get(url)
 }
+export function GetAtomPrice(url) {
+    return request.get(url)
+}
+
+export function GetBtcPrice(url) {
+    return request.get(url)
+}
