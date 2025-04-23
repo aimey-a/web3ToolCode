@@ -4,14 +4,6 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
-    //   {
-    //     path: '/esh',
-    //     name: 'esh',
-    //     component: () => import('@/views/esh.vue'),
-    //     meta: {
-    //       rank: 3,
-    //     },
-    //   },
     {
         path: '/',
         name: 'tool',
@@ -20,11 +12,19 @@ const routes = [
             rank: 1,
         },
     },
+    {
+        path: '/sol',
+        name: 'sol',
+        component: () => import('@/views/sol.vue'),
+        meta: {
+            rank: 2,
+        },
+    },
 ]
 
 const router = new VueRouter({
     routes,
-    mode: "history",
+    // mode: "history",
 })
 
 // router.beforeEach((to, from, next) => {
